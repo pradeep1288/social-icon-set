@@ -1,0 +1,132 @@
+/* @override http://mark.reid.dev/files/css/screen.css */
+/* @group Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td,abbr { margin:0; padding:0;}
+/* @end */
+
+body {
+    font-family: ArvoRegular, georgia, "times new roman", serif;
+    background-color: beige;
+    background-position: center -18em;
+    background-repeat: repeat-x; 
+}
+
+/* Hack via Joel Spolsky to make image rescaling nicer in IE */
+img { -ms-interpolation-mode:bicubic; }
+
+/* IE6 ignores this and uses default size of 16pt */
+html>body { font-size:20px; }
+p { margin: 0 0 1.5em 0; text-align: justify; }
+
+a { text-decoration: none; color: #339; }
+a:hover { text-decoration: underline; color: #33f; }
+a.pdf:before { 
+    margin-right: 1em;
+    content: url(/files/css/icon_pdf.gif); }
+
+h1,h2,h3,h4 { 
+    line-height:1em; 
+    font-size:1.5em; 
+    font-weight: normal; 
+    padding-left: 4em;
+    clear: left;    
+    font-family: ArvoRegular , 'lucida grande', sans-serif; 
+}
+h1 { margin-bottom: 1em; }
+h2 {
+    font-size: 100%;
+    line-height: 1.5em;
+    margin:1.5em 0 1.5em 0;
+    font-weight:bold;
+}
+
+hr { 
+    border-top: 1px solid silver;
+    border-bottom: none;
+    padding: 0;
+    margin: 1.46em 0 0 0;
+}
+
+sup { line-height: 1ex; }
+
+#site {
+    max-width: 46em;
+    margin: 1.5em auto 3em auto;
+    line-height:1.5em;
+}
+
+#page, #disqus_thread {
+    background: whitesmoke;
+/*  background-image: url(grid.png); */
+    padding: 3em 3em 1.5em 10em;
+    border: 1px solid #ccc;
+}
+
+/* More experimental CSS3 features */
+#page, #disqus_thread {
+    box-shadow: 2px 2px 8px #aaa;
+    -webkit-box-shadow: 2px 2px 8px #aaa;
+    -moz-box-shadow: 2px 2px 8px #aaa;  
+}
+
+#disqus_thread { padding-top: 0; }
+
+
+/* @group FancyFirst */
+.emphnext + p:first-letter, p.emphfirst:first-letter {
+    font-size: 48px;
+    padding: 0 0.15em 0 0;
+    margin:  0.05em 0 -0.15em 0;
+    line-height: 1em;
+    float: left;
+}
+
+.emphnext + p:first-line, p.emphfirst:first-line {
+    font-variant: small-caps;
+    font-size: larger;
+}
+/* @end */
+
+.right { float: right; clear: left; }
+.left { float: left; clear: right; }
+.inset { 
+    border: 1px solid silver; 
+    padding: 2px;
+    margin: 0em 0.8em 0.8em 0.8em;
+}
+.right.inset { margin-right: 0 !important; }
+.left.inset { margin-left: 0 !important; }
+.quiet {
+    color: grey;
+    font-size: 0.875em;
+    line-height: 1.714em;
+}
+ul {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+    padding-left: 1.5em;
+}
+ul li {
+    list-style-type: square;
+    list-style-position: outside;
+}
+ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+dt { font-weight: bold;}
+dd { margin: 0 0 1.5em 0; text-align: justify; }
+
+ul.compact { margin: 0; padding: 0;}
+ul.compact li { list-style: ;
+    list-style-type: square;
+    list-style-position: inside;
+}
+ul.compact li span.date {   
+    display: none;
+    color: grey;
+    width: 20%;
+}
+ul.compact li a {
+    width: 70%;
+}
