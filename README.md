@@ -8,5 +8,5 @@ This is a social icon set based on Just Vector fonts developed by [Alex](http://
 [Free Art License](http://artlibre.org/licence/lal/en)
 However just email me if you do any additional enhancements to this or submit a pull request to this project :)
 
-##Usage
-Work in progress
+##Documentation
+Please visit the project's webpage [here](http://pradeepnayak.in/social-icon-set)
